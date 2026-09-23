@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>時計修理店を探す前の確認ガイド｜トケドコ公開資料</title>
+  <meta
+    name="description"
+    content="時計修理店を探すときに確認したいポイントと、時計修理店検索サイト「トケドコ」の使い方・掲載方針をまとめた公開資料です。"
+  >
+
+  <!-- リポジトリ名を変えた場合は、このURLも変更してください -->
+  <link
+    rel="canonical"
+    href="https://nent0116.github.io/tokedoko-guide/"
+  >
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="トケドコ公開資料">
+  <meta property="og:title" content="時計修理店を探す前の確認ガイド">
+  <meta
+    property="og:description"
+    content="時計修理店を探すときの確認ポイントと、トケドコの使い方・掲載方針をまとめています。"
+  >
+  <meta
+    property="og:url"
+    content="https://nent0116.github.io/tokedoko-guide/"
+  >
+
+  <style>
+    :root {
+      --color-page: #ffffff;
+      --color-subtle: #f2f6fc;
+      --color-primary: #123a6b;
+      --color-accent: #1668d9;
+      --color-accent-light: #e7f0fc;
+      --color-border: #dce4ef;
+      --color-text: #13233b;
+      --color-muted: #5a6b80;
+      --color-on-primary: #ffffff;
+      --shadow-card: 0 12px 32px rgba(18, 58, 107, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--color-page);
+      color: var(--color-text);
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--color-accent);
+    }
+
+    .hero {
+      padding: 64px 24px;
+      background:
+        linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-accent)
+        );
+      color: var(--color-on-primary);
+    }
+
+    .hero-inner,
+    main,
+    footer {
+      width: min(100% - 40px, 880px);
+      margin-inline: auto;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 5px 12px;
+      border: 1px solid var(--color-on-primary);
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1.35;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      font-size: 18px;
+    }
+
+    main {
+      padding-block: 48px 72px;
+    }
+
+    section {
+      margin-top: 52px;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-border);
+      font-size: 26px;
+      line-height: 1.5;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+
+    .notice,
+    .card,
+    .cta {
+      border-radius: 16px;
+    }
+
+    .notice {
+      padding: 20px 22px;
+      background: var(--color-subtle);
+      border-left: 5px solid var(--color-accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-card);
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--color-muted);
+    }
+
+    .steps {
+      padding-left: 1.5em;
+    }
+
+    .steps li {
+      margin-bottom: 12px;
+    }
+
+    .cta {
+      margin-top: 56px;
+      padding: 32px 24px;
+      background: var(--color-subtle);
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 13px 24px;
+      border-radius: 10px;
+      background: var(--color-accent);
+      color: var(--color-on-primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: var(--color-primary);
+      color: var(--color-on-primary);
+    }
+
+    footer {
+      padding-block: 30px 48px;
+      border-top: 1px solid var(--color-border);
+      color: var(--color-muted);
+      font-size: 14px;
+    }
+
+    footer nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding-block: 44px;
+      }
+
+      main {
+        padding-top: 32px;
+      }
+
+      section {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="label">トケドコ公開資料</span>
+      <h1>時計修理店を探す前の<br>確認ガイド</h1>
+      <p class="lead">
+        時計の修理やメンテナンスを相談できる店舗を探すときに、
+        事前に確認しておきたい情報と、時計修理店検索サイト
+        「トケドコ」の使い方をまとめました。
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="notice">
+      このページは、時計修理店検索サイト「トケドコ」の運営者が作成した公開資料です。
+      最新の店舗情報は、各店舗の公式サイトなどでもご確認ください。
+    </div>
+
+    <section>
+      <h2>時計修理店を探す前のチェックポイント</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>所在地と移動時間</h3>
+          <p>
+            自宅や勤務先からの距離だけでなく、最寄り駅や営業時間もあわせて確認します。
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>相談したい内容</h3>
+          <p>
+            電池交換、ベルト調整、修理相談など、依頼したい内容を整理しておくと確認がスムーズです。
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>受付条件</h3>
+          <p>
+            対応できる時計や受付方法は店舗によって異なります。来店前に店舗へ直接確認してください。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>トケドコで確認できる情報</h2>
+
+      <p>
+        トケドコは、時計修理店を市区町村や駅から探せる検索サイトです。
+        掲載データがある店舗について、主に次の情報を確認できます。
+      </p>
+
+      <ul>
+        <li>店舗名</li>
+        <li>所在地</li>
+        <li>営業時間</li>
+        <li>電話番号</li>
+        <li>公式サイトへの案内</li>
+        <li>最寄り駅と店舗までの直線距離</li>
+      </ul>
+
+      <p>
+        営業時間や連絡先は変更される場合があります。
+        実際に訪問する前に、店舗の公式情報をご確認ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>掲載していない情報</h2>
+
+      <p>
+        店舗を順位づけしたり、根拠のない情報を掲載したりしないため、
+        トケドコでは次の情報を表示していません。
+      </p>
+
+      <ul>
+        <li>口コミ評価や口コミ件数</li>
+        <li>店舗のランキング</li>
+        <li>店舗画像</li>
+        <li>確認できていない修理内容</li>
+        <li>確認できていない対応ブランド</li>
+      </ul>
+
+      <p>
+        検索結果の並び順は、店舗の優劣やおすすめ順位を示すものではありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>地域から探す方法</h2>
+
+      <ol class="steps">
+        <li>
+          トケドコを開き、都道府県を選びます。
+        </li>
+        <li>
+          市区町村を選び、掲載されている時計修理店を確認します。
+        </li>
+        <li>
+          店舗詳細で所在地、営業時間、電話番号などを確認します。
+        </li>
+        <li>
+          来店前に、店舗の公式サイトや電話で最新情報を確認します。
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>駅から探す方法</h2>
+
+      <p>
+        駅ページでは、駅周辺の掲載店舗を確認できます。
+        表示される距離は、経路距離ではなく直線距離です。
+      </p>
+
+      <p>
+        駅の近くで掲載店舗を確認できない場合は、
+        検索範囲を広げた候補が表示されることがあります。
+      </p>
+    </section>
+
+    <section>
+      <h2>検索結果が0件だった場合</h2>
+
+      <p>
+        検索結果が0件でも、その地域に時計修理店が存在しないとは限りません。
+        「当サイトの掲載データでは確認できませんでした」という意味です。
+      </p>
+
+      <p>
+        近隣の市区町村や駅もあわせて検索すると、別の候補が見つかる場合があります。
+      </p>
+    </section>
+
+    <section>
+      <h2>利用時の注意事項</h2>
+
+      <ul>
+        <li>営業時間や休業日は変更されることがあります。</li>
+        <li>修理の受付可否や料金は、店舗へ直接ご確認ください。</li>
+        <li>掲載情報は、特定店舗の推奨や品質保証を意味するものではありません。</li>
+        <li>時計の状態によっては、その場で対応できない場合があります。</li>
+      </ul>
+    </section>
+
+    <aside class="cta">
+      <h2>時計修理店を探す</h2>
+      <p>
+        地域や駅から時計修理店を探す場合は、トケドコ公式サイトをご利用ください。
+      </p>
+      <a class="button" href="https://tokedoko.com/">
+        トケドコ公式サイトを見る
+      </a>
+    </aside>
+  </main>
+
+  <footer>
+    <nav aria-label="関連リンク">
+      <a href="https://tokedoko.com/">トケドコ公式サイト</a>
+      <a href="https://tokedoko.com/terms/">利用規約</a>
+      <a href="https://tokedoko.com/contact/">お問い合わせ</a>
+    </nav>
+
+    <p>運営：ネント合同会社</p>
+    <p>
+      本ページはトケドコの使い方と掲載方針を説明する公開資料です。
+    </p>
+  </footer>
+</body>
+</html>
